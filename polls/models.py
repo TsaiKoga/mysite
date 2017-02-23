@@ -20,4 +20,3 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
     def __str__(self):
         return "id: "+ str(self.id) + ", choice_text: " + self.choice_text + ", votes: " + str(self.votes)
-
