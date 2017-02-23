@@ -19,7 +19,6 @@ from polls import views as polls_views
 
 
 urlpatterns = [
-    url(r'^$', polls_views.index),
     url(r'^admin/', admin.site.urls),
     url(r'^polls/', include('polls.urls') ),
 ]
