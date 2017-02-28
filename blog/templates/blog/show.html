@@ -1,0 +1,7 @@
+{% extends "polls/layout.html" %}
+
+{% block content %}
+  <h3>{{ post.title }}</h3>
+  <h6>on {{ post.date }}</h6>
+  {{ post.body | safe | linebreaks }} <!-- safe将可以使用标签，但是可能造成csrf攻击-->
+{% endblock %}
